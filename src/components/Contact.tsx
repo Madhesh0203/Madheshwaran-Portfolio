@@ -30,7 +30,7 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-24 relative" ref={ref}>
       {/* Background Effect */}
-      <div className="absolute inset-0 bg-radial-gradient opacity-50" />
+      <div className="absolute inset-0 bg-radial-gradient opacity-100" />
 
       <div className="section-container relative z-10">
         <motion.div
