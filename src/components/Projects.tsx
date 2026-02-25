@@ -31,7 +31,14 @@ const projects: Project[] = [
     github: 'https://github.com/Madhesh0203',
     image: '/images/sentiment-analysis.svg',
   },
-
+  {
+    title: 'ASD Support & Awareness Platform',
+    description: 'A dedicated resource hub for Autism Spectrum Disorder (ASD). Provides early identification tools, therapeutic activity guides, and a supportive community space for families and caregivers.',
+    tags: ['Web Development', 'jQuery', 'Social Impact', 'Accessibility'],
+    categories: ['🌐 Web Development', '🌱 Social Impact'],
+    github: 'https://github.com/Madhesh0203/ASD-child-support',
+    image: '/images/sentiment-analysis.svg',
+  },
   {
     title: 'Clean Architecture Portfolio',
     description: 'A comprehensive demonstration of Clean Architecture principles using MVVM pattern. Features clear separation of concerns with Domain, Data, and Presentation layers, employing Observer and Repository patterns with Dependency Injection.',
@@ -65,11 +72,11 @@ const projects: Project[] = [
     image: '/images/gui-tool.svg',
   },
   {
-    title: 'Online Gift Shop',
+    title: 'Modern Ecommerce Gift Shop',
     description: 'A feature-rich e-commerce web application designed for personalized gifting. Users can browse products, customize gifts for specific occasions, and manage orders through a secure and responsive interface.',
     tags: ['Web Development', 'E-commerce', 'UI/UX', 'Frontend'],
     categories: ['🌐 Web Development'],
-    github: 'https://github.com/Madhesh0203/online-gift-shop-website',
+    github: 'https://github.com/Madhesh0203/Ecommerce-website',
     image: '/images/ecommerce.svg',
   },
   {
