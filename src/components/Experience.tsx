@@ -115,35 +115,22 @@ export const Experience = () => {
                     layout
                   >
                     <div className="p-6 md:p-8">
-                      <div className="flex items-start gap-4 md:gap-6 mb-6">
-                        {/* Logo Container */}
-                        <div className="shrink-0">
-                          <div className="w-20 h-16 md:w-24 md:h-18 rounded-xl bg-transparent flex items-center justify-center">
-                            {exp.image ? (
-                              <img
-                                src={exp.image}
-                                alt={exp.company}
-                                className="w-full h-full object-contain p-0"
-                              />
-                            ) : null}
-                          </div>
-                        </div>
-
+                      <div className="mb-6">
                         {/* Title & Company */}
-                        <div className="flex-1 min-w-0">
+                        <div className="min-w-0">
                           <h3 className="font-display text-lg md:text-xl font-bold text-foreground leading-tight mb-1">
                             {exp.title}
                           </h3>
-                          <h4 className="text-base font-semibold text-primary mb-2">
+                          <h4 className="text-base font-semibold text-primary mb-3">
                             {exp.company}
                           </h4>
 
-                          <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs md:text-sm text-muted-foreground">
-                            <span className="flex items-center gap-1.5">
+                          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs md:text-sm text-muted-foreground">
+                            <span className="flex items-center gap-2 bg-secondary/30 px-3 py-1 rounded-full border border-border/50">
                               📅 {exp.period}
                             </span>
                             {exp.location && (
-                              <span className="flex items-center gap-1.5">
+                              <span className="flex items-center gap-2 bg-secondary/30 px-3 py-1 rounded-full border border-border/50">
                                 🌍 {exp.location}
                               </span>
                             )}

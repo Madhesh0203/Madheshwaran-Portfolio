@@ -18,7 +18,7 @@ const certificationDescriptions: Record<string, { description: string[], logo: s
       'Understanding of cloud concepts and Azure services',
       'Knowledge of security, privacy, compliance, and trust'
     ],
-    logo: '/logos/microsoft.png'
+    logo: `${import.meta.env.BASE_URL}logos/microsoft.png`
   },
   'Java Full Stack course and Soft skill training': {
     description: [
@@ -26,14 +26,14 @@ const certificationDescriptions: Record<string, { description: string[], logo: s
       'Soft skills development'
     ],
 
-    logo: '/logos/qspiders.svg'
+    logo: `${import.meta.env.BASE_URL}logos/qspiders.svg`
   },
   'SQL and Relational Databases 101': {
     description: [
       'Relational database concepts',
       'Writing SQL queries for data retrieval'
     ],
-    logo: '/logos/ibm.png'
+    logo: `${import.meta.env.BASE_URL}logos/ibm.png`
   }
 };
 
@@ -49,7 +49,7 @@ export const Certifications = ({ limit }: { limit?: number }) => {
   const [certifications, setCertifications] = useState<Certification[]>([]);
 
   useEffect(() => {
-    fetch('/Certifications.csv')
+    fetch(`${import.meta.env.BASE_URL}Certifications.csv`)
       .then(response => response.text())
       .then(data => {
         const lines = data.split('\n').slice(1);

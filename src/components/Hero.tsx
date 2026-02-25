@@ -110,7 +110,7 @@ export const Hero = () => {
               <ArrowDown size={18} className="-rotate-90" />
             </a>
             {/* Resume button kept but might need future file update */}
-            <a href="/Madheshwaran-Resume.pdf"
+            <a href={`${import.meta.env.BASE_URL}Madheshwaran-Resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary flex items-center gap-2"
