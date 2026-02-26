@@ -25,13 +25,11 @@ export const BinaryRainBackground = () => {
 
         const draw = () => {
             // Semi-transparent black background to create trail effect
-            // Using the theme background color (approx) to match the dark theme
-            // hsl(222 47% 5%) is approx #070b14. 
-            // We use a low opacity to let the previous frame show through slightly (fading trail)
-            ctx.fillStyle = 'rgba(7, 11, 20, 0.05)';
+            // Using the theme background color precisely: hsl(222 47% 5%)
+            ctx.fillStyle = 'rgba(7, 11, 20, 0.1)';
             ctx.fillRect(0, 0, width, height);
 
-            ctx.fillStyle = 'rgba(239, 68, 68, 0.4)'; // Red color with 0.4 opacity
+            ctx.fillStyle = 'rgba(59, 235, 245, 0.35)'; // Primary Teal color with 0.35 opacity
             ctx.font = `${fontSize}px monospace`;
 
             for (let i = 0; i < drops.length; i++) {

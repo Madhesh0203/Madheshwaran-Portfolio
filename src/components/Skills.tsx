@@ -30,7 +30,7 @@ export const Skills = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="skills" className="py-24 relative bg-secondary/20" ref={ref}>
+    <section id="skills" className="py-24 relative bg-transparent" ref={ref}>
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
