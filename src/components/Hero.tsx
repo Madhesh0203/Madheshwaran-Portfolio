@@ -17,8 +17,8 @@ export const Hero = () => {
       />
 
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-50" />
       <div className="absolute inset-0 bg-radial-gradient" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent pointer-events-none z-0" />
 
       {/* Floating Orbs */}
       <motion.div

@@ -72,7 +72,7 @@ export const Experience = () => {
   };
 
   return (
-    <section id="experience" className="py-24 relative bg-secondary/20" ref={ref}>
+    <section id="experience" className="py-24 relative bg-transparent" ref={ref}>
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
