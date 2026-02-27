@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
-import { Award, ExternalLink } from 'lucide-react';
+import { Award, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 
 interface Certification {
   name: string;
@@ -34,19 +34,38 @@ const certificationDescriptions: Record<string, { description: string[], logo: s
       'Writing SQL queries for data retrieval'
     ],
     logo: `${import.meta.env.BASE_URL}logos/ibm.png`
+  },
+  'Networking Basics': {
+    description: [
+      'Fundamental concepts of computer networking',
+      'Understanding OSI model, protocols, and network architecture'
+    ],
+    logo: `${import.meta.env.BASE_URL}logos/cisco.png`
+  },
+  'Getting Started with Cisco Packet Tracer': {
+    description: [
+      'Hands-on experience with Cisco Packet Tracer tool',
+      'Building and configuring network simulations and troubleshooting'
+    ],
+    logo: `${import.meta.env.BASE_URL}logos/cisco.png`
   }
 };
 
 const priorityOrder = [
+  'Networking Basics',
+  'Getting Started with Cisco Packet Tracer',
   'Azure Cloud Fundamentals',
   'Java Full Stack course and Soft skill training',
   'SQL and Relational Databases 101'
 ];
 
+const INITIAL_DISPLAY_COUNT = 3;
+
 export const Certifications = ({ limit }: { limit?: number }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
   const [certifications, setCertifications] = useState<Certification[]>([]);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}Certifications.csv`)
@@ -106,7 +125,7 @@ export const Certifications = ({ limit }: { limit?: number }) => {
       .catch(error => console.error('Error loading certifications:', error));
   }, [limit]);
 
-
+  const displayedCerts = isExpanded ? certifications : certifications.slice(0, INITIAL_DISPLAY_COUNT);
 
   return (
     <section id="certifications" className="py-24 relative" ref={ref}>
@@ -125,58 +144,88 @@ export const Certifications = ({ limit }: { limit?: number }) => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {certifications.map((cert, index) => (
-            <motion.a
-              key={cert.name}
-              href={cert.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="glass-card p-6 hover:border-primary/30 transition-all duration-300 group cursor-pointer hover:translate-y-[-4px] hover:shadow-lg"
-            >
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-16 h-16 rounded-xl bg-white flex items-center justify-center shrink-0 p-2 border border-border/20 group-hover:border-primary/30 transition-colors">
-                  <img
-                    src={cert.logo}
-                    alt={cert.authority}
-                    className="w-full h-full object-contain"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      e.currentTarget.parentElement!.innerHTML = `<span class="font-bold text-primary text-lg">${cert.authority.substring(0, 3).toUpperCase()}</span>`;
-                    }}
-                  />
+        <motion.div
+          layout
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto"
+        >
+          <AnimatePresence>
+            {displayedCerts.map((cert, index) => (
+              <motion.a
+                key={cert.name}
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                layout
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.3 }}
+                className="glass-card p-6 hover:border-primary/30 transition-all duration-300 group cursor-pointer hover:translate-y-[-4px] hover:shadow-lg flex flex-col h-full"
+              >
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="w-16 h-16 rounded-xl bg-white flex items-center justify-center shrink-0 p-2 border border-border/20 group-hover:border-primary/30 transition-colors">
+                    <img
+                      src={cert.logo}
+                      alt={cert.authority}
+                      className="w-full h-full object-contain"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                        e.currentTarget.parentElement!.innerHTML = `<span class="font-bold text-primary text-lg">${cert.authority.substring(0, 3).toUpperCase()}</span>`;
+                      }}
+                    />
+                  </div>
+                  <ExternalLink size={16} className="text-primary opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
                 </div>
-                <ExternalLink size={16} className="text-primary opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
-              </div>
 
-              <h3 className="font-display font-bold text-lg mb-2 group-hover:text-primary transition-colors line-clamp-2">
-                {cert.name}
-              </h3>
+                <h3 className="font-display font-bold text-lg mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                  {cert.name}
+                </h3>
 
-              <p className="text-sm text-primary font-semibold mb-3">
-                {cert.authority}
-              </p>
-
-              <ul className="space-y-2 mb-4">
-                {cert.description.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <span className="text-primary mt-1">▹</span>
-                    <span>{point}</span>
-                  </li>
-                ))}
-              </ul>
-
-              {cert.license && (
-                <p className="text-xs text-muted-foreground mt-auto pt-4 border-t border-border/50">
-                  License: {cert.license}
+                <p className="text-sm text-primary font-semibold mb-3">
+                  {cert.authority}
                 </p>
+
+                <ul className="space-y-2 mb-4 flex-grow">
+                  {cert.description.map((point, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <span className="text-primary mt-1">▹</span>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {cert.license && (
+                  <p className="text-xs text-muted-foreground mt-auto pt-4 border-t border-border/50">
+                    License: {cert.license}
+                  </p>
+                )}
+              </motion.a>
+            ))}
+          </AnimatePresence>
+        </motion.div>
+
+        {certifications.length > INITIAL_DISPLAY_COUNT && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ delay: 0.5 }}
+            className="mt-12 text-center"
+          >
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="glass-card px-8 py-3 rounded-full font-bold group hover:border-primary/50 transition-all duration-300 flex items-center gap-2 mx-auto"
+            >
+              <span className="group-hover:text-primary transition-colors">
+                {isExpanded ? 'Show Less' : 'View All Certificates'}
+              </span>
+              {isExpanded ? (
+                <ChevronUp className="w-5 h-5 text-primary group-hover:translate-y-[-2px] transition-transform" />
+              ) : (
+                <ChevronDown className="w-5 h-5 text-primary group-hover:translate-y-[2px] transition-transform" />
               )}
-            </motion.a>
-          ))}
-        </div>
+            </button>
+          </motion.div>
+        )}
       </div>
     </section>
   );

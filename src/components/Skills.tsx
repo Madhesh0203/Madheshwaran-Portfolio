@@ -17,7 +17,7 @@ const skillCategories = [
   },
   {
     title: 'Cloud & Networking',
-    skills: ['Microsoft Azure', 'Virtual Machines', 'TCP/IP', 'OSI Model'],
+    skills: ['Networking', 'Microsoft Azure', 'Virtual Machines', 'TCP/IP', 'OSI Model'],
   },
   {
     title: 'Tools & Platforms',
