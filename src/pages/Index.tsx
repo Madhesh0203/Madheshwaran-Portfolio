@@ -10,10 +10,8 @@ import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ChevronRight } from 'lucide-react';
 
 const Index = () => {
-  const [showAllCertifications, setShowAllCertifications] = useState(false);
 
   useEffect(() => {
     document.title = 'Madheshwaran J | Data Practitioner & Web Developer Portfolio';
@@ -37,26 +35,7 @@ const Index = () => {
         <Projects />
         <Education />
 
-        {showAllCertifications ? (
-          <Certifications />
-        ) : (
-          <>
-            <Certifications limit={6} />
-            <div className="text-center pb-12">
-              <motion.button
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                onClick={() => setShowAllCertifications(true)}
-                className="btn-primary"
-              >
-                View All Certifications
-                <ChevronRight size={18} />
-              </motion.button>
-            </div>
-          </>
-        )}
-
+        <Certifications />
         <Contact />
       </main>
       <Footer />
