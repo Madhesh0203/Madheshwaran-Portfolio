@@ -93,7 +93,7 @@ const projects: Project[] = [
     tags: ['Python', 'OpenCV', 'MediaPipe', 'PyAutoGUI', 'Computer Vision'],
     categories: ['🤖 AI & ML', '💻 Software & Tools'],
     github: 'https://github.com/Madhesh0203/Hand_Gesture_Mouse',
-    image: '/images/network-tool.svg',
+    image: '/images/hand-gesture-mouse.png',
   }
 ];
 
