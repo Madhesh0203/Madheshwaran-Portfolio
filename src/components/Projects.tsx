@@ -86,6 +86,14 @@ const projects: Project[] = [
     categories: ['🤖 AI & ML', '💻 Software & Tools'],
     github: 'https://github.com/Madhesh0203/slooze-inventory-analytics',
     image: '/images/ecommerce.svg',
+  },
+  {
+    title: 'Hand Gesture Mouse Control',
+    description: 'A touchless mouse control system that uses real-time hand gesture recognition via a webcam to move the cursor, perform clicks, and scroll — all without touching a mouse. Built using MediaPipe for hand landmark detection and PyAutoGUI for system-level mouse control.',
+    tags: ['Python', 'OpenCV', 'MediaPipe', 'PyAutoGUI', 'Computer Vision'],
+    categories: ['🤖 AI & ML', '💻 Software & Tools'],
+    github: 'https://github.com/Madhesh0203/Hand_Gesture_Mouse',
+    image: '/images/network-tool.svg',
   }
 ];
 
