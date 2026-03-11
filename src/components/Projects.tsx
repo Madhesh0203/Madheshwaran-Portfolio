@@ -4,12 +4,12 @@ import { useRef, useState } from 'react';
 import { ExternalLink, Github, ChevronRight } from 'lucide-react';
 
 const categories = [
-  '🎯 All Projects',
-  '🤖 AI & ML',
-  '🌐 Web Development',
-  '💻 Software & Tools',
-  '☁️ Cloud & Networking',
-  '🌱 Social Impact',
+  'All Projects',
+  'AI & ML',
+  'Web Development',
+  'Software & Tools',
+  'Cloud & Networking',
+  'Social Impact',
 ];
 
 interface Project {
@@ -24,10 +24,19 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'Family Medical Record System',
+    description: 'A secure web-based family health management system that allows families to store, manage, and access medical records digitally. Features include family member profiles, medical history tracking, appointment records, and secure OTP-based authentication — making healthcare data easily accessible for families.',
+    tags: ['Web Development', 'HTML/CSS', 'JavaScript', 'Healthcare', 'Node.js'],
+    categories: ['Web Development', 'Social Impact'],
+    github: 'https://github.com/Madhesh0203/Family-medical-record-system',
+    live: 'https://madhesh0203.github.io/Family-medical-record-system/',
+    image: '/images/family-medical.png',
+  },
+  {
     title: 'Sentiment Analysis using Machine Learning',
     description: 'Developed a speech-based sentiment analysis system capable of accurately identifying emotions such as happy, sad, and neutral from voice input. Extracted advanced audio features using MFCC and STFT techniques, and implemented LSTM models for precise emotion classification.',
     tags: ['Machine Learning', 'LSTM', 'MFCC/STFT', 'Python', 'Flask', 'HTML/CSS', 'Groq API'],
-    categories: ['🤖 AI & ML', '🌐 Web Development'],
+    categories: ['AI & ML', 'Web Development'],
     github: 'https://github.com/Madhesh0203',
     image: '/images/sentiment-analysis.svg',
   },
@@ -35,63 +44,40 @@ const projects: Project[] = [
     title: 'ASD Support & Awareness Platform',
     description: 'A dedicated resource hub for Autism Spectrum Disorder (ASD). Provides early identification tools, therapeutic activity guides, and a supportive community space for families and caregivers.',
     tags: ['Web Development', 'jQuery', 'Social Impact', 'Accessibility'],
-    categories: ['🌐 Web Development', '🌱 Social Impact'],
+    categories: ['Web Development', 'Social Impact'],
     github: 'https://github.com/Madhesh0203/ASD-child-support',
-    image: '/images/sentiment-analysis.svg',
+    image: '/images/asd-support.png',
   },
-  {
-    title: 'Clean Architecture Portfolio',
-    description: 'A comprehensive demonstration of Clean Architecture principles using MVVM pattern. Features clear separation of concerns with Domain, Data, and Presentation layers, employing Observer and Repository patterns with Dependency Injection.',
-    tags: ['Clean Architecture', 'MVVM', 'Design Patterns', 'TypeScript', 'Software Design'],
-    categories: ['🌐 Web Development', '💻 Software & Tools'],
-    github: 'https://github.com/Madhesh0203/Clean-Architecture-Portfolio',
-    image: '/images/architecture.svg',
-  },
-  {
-    title: 'YouTube Video Downloader',
-    description: 'A robust desktop application with a user-friendly GUI for downloading high-quality YouTube videos and audio. Features automatic stream merging using FFmpeg, format conversion, and real-time progress tracking.',
-    tags: ['Python', 'Tkinter', 'FFmpeg', 'yt-dlp', 'GUI'],
-    categories: ['💻 Software & Tools'],
-    github: 'https://github.com/Madhesh0203/Youtube_downloader_python_project',
-    image: '/images/gui-tool.svg',
-  },
+
   {
     title: 'Mini Nmap Network Scanner',
     description: 'A custom Python-based network scanner for Linux environments. Capable of detecting open ports, identifying running services, and generating detailed scan reports using TCP socket programming.',
     tags: ['Python', 'Networking', 'Socket Programming', 'Linux', 'Security'],
-    categories: ['💻 Software & Tools', '☁️ Cloud & Networking'],
+    categories: ['Software & Tools', 'Cloud & Networking'],
     github: 'https://github.com/Madhesh0203/Mini-nmap',
     image: '/images/network-tool.svg',
-  },
-  {
-    title: 'Smart Clipboard Manager',
-    description: 'A productivity tool that extends system clipboard functionality. Monitors clipboard history in real-time, allowing users to view, edit, search, and manage copied items through an intuitive desktop interface.',
-    tags: ['Python', 'Tkinter', 'Pyperclip', 'Desktop App', 'Productivity'],
-    categories: ['💻 Software & Tools'],
-    github: 'https://github.com/Madhesh0203/Smart-Clipboard-Manager',
-    image: '/images/gui-tool.svg',
   },
   {
     title: 'Modern Ecommerce Gift Shop',
     description: 'A feature-rich e-commerce web application designed for personalized gifting. Users can browse products, customize gifts for specific occasions, and manage orders through a secure and responsive interface.',
     tags: ['Web Development', 'E-commerce', 'UI/UX', 'Frontend'],
-    categories: ['🌐 Web Development'],
+    categories: ['Web Development'],
     github: 'https://github.com/Madhesh0203/Ecommerce-website',
-    image: '/images/ecommerce.svg',
+    image: '/images/ecommerce-gift.png',
   },
   {
     title: 'Slooze Inventory Analytics',
     description: 'An advanced analytics solution for inventory management. Provides data visualization trends, stock level tracking, and actionable insights to optimize supply chain operations.',
     tags: ['Data Analysis', 'Analytics', 'Visualization', 'Business Intelligence'],
-    categories: ['🤖 AI & ML', '💻 Software & Tools'],
+    categories: ['AI & ML', 'Software & Tools'],
     github: 'https://github.com/Madhesh0203/slooze-inventory-analytics',
-    image: '/images/ecommerce.svg',
+    image: '/images/slooze-inventory.png',
   },
   {
     title: 'Hand Gesture Mouse Control',
     description: 'A touchless mouse control system that uses real-time hand gesture recognition via a webcam to move the cursor, perform clicks, and scroll — all without touching a mouse. Built using MediaPipe for hand landmark detection and PyAutoGUI for system-level mouse control.',
     tags: ['Python', 'OpenCV', 'MediaPipe', 'PyAutoGUI', 'Computer Vision'],
-    categories: ['🤖 AI & ML', '💻 Software & Tools'],
+    categories: ['AI & ML', 'Software & Tools'],
     github: 'https://github.com/Madhesh0203/Hand_Gesture_Mouse',
     image: '/images/hand-gesture-mouse.png',
   }
