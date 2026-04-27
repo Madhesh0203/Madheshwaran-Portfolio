@@ -42,7 +42,7 @@ export const Contact = () => {
             Let's <span className="gradient-text">Connect</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or want to discuss data science opportunities? I'd love to hear from you!
+            Open to cloud engineering and software development roles. If you have an opportunity or want to collaborate, reach out directly.
           </p>
         </motion.div>
 

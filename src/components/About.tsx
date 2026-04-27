@@ -7,32 +7,32 @@ const highlights = [
   {
     icon: TrendingUp,
     title: 'Data Analysis',
-    description: 'Data Cleaning, Validation, SQL Queries, and building insights from raw data.',
+    description: 'SQL-based data pipelines, cleaning, validation, and delivering actionable insights from raw datasets.',
   },
   {
     icon: Code2,
-    title: 'Web Technologies',
-    description: 'Expertise in HTML, CSS, JavaScript for responsive web design.',
+    title: 'Full Stack Development',
+    description: 'Built production-ready web apps using HTML, CSS, JavaScript, Node.js, and REST APIs.',
   },
   {
     icon: Brain,
     title: 'Machine Learning',
-    description: 'Developing ML models for sentiment analysis and emotion classification.',
+    description: 'Trained and deployed LSTM-based models for real-time speech sentiment classification.',
   },
   {
     icon: Users,
-    title: 'Leadership',
-    description: 'Experience in coordinating events and managing teams for ecological restoration projects.',
+    title: 'Team Collaboration',
+    description: 'Led cross-functional teams as Event Coordinator, managing timelines and deliverables end-to-end.',
   },
   {
     icon: Zap,
-    title: 'Cloud Computing',
-    description: 'Hands-on experience with Microsoft Azure, Virtual Machines, and Networking protocols.',
+    title: 'Cloud & Networking',
+    description: 'Provisioned Azure VMs, configured OSI/TCP-IP networks, and managed Linux servers via PuTTY/WinSCP.',
   },
   {
     icon: Trophy,
-    title: 'Continuous Learner',
-    description: 'Actively pursuing certifications in Cloud, Full Stack, and Data technologies.',
+    title: 'Certified & Growing',
+    description: 'Holds credentials from Microsoft, Cisco, and IBM — actively expanding in cloud and DevOps domains.',
   },
 ];
 
@@ -53,7 +53,7 @@ export const About = () => {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Aspiring Data Practitioner and Web Developer
+            Cloud Engineer · Software Developer · Data Analyst
           </p>
         </motion.div>
 
@@ -68,10 +68,10 @@ export const About = () => {
             <h3 className="font-display text-xl font-semibold mb-4 gradient-text">Background</h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I am <span className="text-foreground font-medium">Madheshwaran J</span>, a final-year Computer Science Engineering student at Sathyabama Institute of Science and Technology, Chennai. My journey is defined by a passion for <span className="text-primary font-medium">Data Analysis</span> and <span className="text-primary font-medium">Software Development</span>. I have actively applied my skills in internships, notably as a Data Practitioner Intern at <span className="text-foreground font-medium">MethodHub Software</span> and a Web Development Intern at <span className="text-foreground font-medium">Lemonpeak Technologies</span>.
+                I am <span className="text-foreground font-medium">Madheshwaran J</span>, a Computer Science Engineering graduate from Sathyabama Institute of Science and Technology, Chennai. I have hands-on internship experience at <span className="text-foreground font-medium">MethodHub Software</span> (Cloud Infrastructure & Networking) and <span className="text-foreground font-medium">Lemonpeak Technologies</span> (Full Stack Web Development) — working in real production environments with industry-standard tools.
               </p>
               <p>
-                I have hands-on experience in core concepts of SQL, Linux, and Microsoft Azure cloud fundamentals. My projects, such as <span className="text-primary font-medium">Sentiment Analysis using Machine Learning</span>, showcase my ability to integrate advanced techniques like LSTM models and audio feature extraction to solve real-world problems. Beyond technical skills, I have demonstrated strong leadership and organizational abilities as an Event Coordinator for the <span className="text-primary font-medium">Mega Foundation Project</span>, where I led a team in ecological restoration initiatives. I am driven by a curiosity to learn and apply technology to create meaningful impact.
+                I work across cloud and software layers: provisioning <span className="text-primary font-medium">Azure VMs</span>, configuring <span className="text-primary font-medium">TCP/IP networks and OSI-stack services</span>, managing Linux servers, and building full-stack web applications and ML pipelines. I hold industry certifications from Microsoft, Cisco, and IBM, and bring a structured, collaborative approach to engineering challenges.
               </p>
             </div>
           </motion.div>

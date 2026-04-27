@@ -58,11 +58,11 @@ export const Hero = () => {
           >
             <TypeWriter
               words={[
-                'Data Practitioner',
-                'Web Developer',
-                'Java Enthusiast',
-                'Cloud & Networking',
-                'Machine Learning',
+                'Cloud Engineer',
+                'Software Developer',
+                'Full Stack Developer',
+                'Data Analyst',
+                'ML Engineer',
                 'Problem Solver'
               ]}
               className="text-primary font-semibold"
@@ -77,7 +77,7 @@ export const Hero = () => {
           >
             Based in Chennai, Tamil Nadu.
             <br /><br />
-            I am a Computer Science Engineering student with expertise in Data Analysis, Web Development, and Cloud Computing. I possess strong technical skills in Java, Python, SQL, and Web Technologies, with practical experience in building responsive web applications and data-driven insights.
+            Computer Science Engineering graduate with hands-on internship experience in cloud infrastructure, networking, and full-stack development. Backed by industry certifications in Microsoft Azure and Cisco networking.
           </motion.p>
 
           {/* Social Links */}

@@ -14,12 +14,12 @@ import { motion } from 'framer-motion';
 const Index = () => {
 
   useEffect(() => {
-    document.title = 'Madheshwaran J | Data Practitioner & Web Developer Portfolio';
+    document.title = 'Madheshwaran J | Cloud Engineer & Software Developer';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content',
-        'Portfolio of Madheshwaran J - Data Practitioner and Web Developer. Expertise in Data Analysis, Machine Learning, and Web Development.'
+        'Portfolio of Madheshwaran J — Cloud Engineer and Software Developer. Experienced in Azure infrastructure, full-stack development, data analysis, and machine learning.'
       );
     }
   }, []);

@@ -15,37 +15,37 @@ interface Certification {
 const certificationDescriptions: Record<string, { description: string[], logo: string }> = {
   'Azure Cloud Fundamentals': {
     description: [
-      'Understanding of cloud concepts and Azure services',
-      'Knowledge of security, privacy, compliance, and trust'
+      'Core Azure services: compute, storage, networking, and identity management',
+      'Security, compliance, governance, and Azure pricing models'
     ],
     logo: `${import.meta.env.BASE_URL}logos/microsoft.png`
   },
   'Java Full Stack course and Soft skill training': {
     description: [
-      'Full stack development with Java',
-      'Soft skills development'
+      'Full-stack development with Java, covering both frontend and backend layers',
+      'Professional communication and structured problem-solving skills'
     ],
 
     logo: `${import.meta.env.BASE_URL}logos/qspiders.svg`
   },
   'SQL and Relational Databases 101': {
     description: [
-      'Relational database concepts',
-      'Writing SQL queries for data retrieval'
+      'Relational database design, normalisation, and query optimisation',
+      'Writing complex SQL queries including joins, aggregations, and subqueries'
     ],
     logo: `${import.meta.env.BASE_URL}logos/ibm.png`
   },
   'Networking Basics': {
     description: [
-      'Fundamental concepts of computer networking',
-      'Understanding OSI model, protocols, and network architecture'
+      'Core networking concepts: IP addressing, subnetting, and DNS',
+      'OSI model, network protocols, and LAN/WAN architecture'
     ],
     logo: `${import.meta.env.BASE_URL}logos/cisco.png`
   },
   'Getting Started with Cisco Packet Tracer': {
     description: [
-      'Hands-on experience with Cisco Packet Tracer tool',
-      'Building and configuring network simulations and troubleshooting'
+      'Configuring routers, switches, and end devices in simulated environments',
+      'Network topology design, troubleshooting, and connectivity validation'
     ],
     logo: `${import.meta.env.BASE_URL}logos/cisco.png`
   }
@@ -140,7 +140,7 @@ export const Certifications = ({ limit }: { limit?: number }) => {
             Professional <span className="gradient-text">Certifications</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Industry-recognized credentials demonstrating expertise across data science, analytics, and cloud technologies
+            Industry-recognised credentials in cloud computing, networking, and data engineering from Microsoft, Cisco, and IBM
           </p>
         </motion.div>
 

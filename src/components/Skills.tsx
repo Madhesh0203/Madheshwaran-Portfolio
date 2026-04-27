@@ -5,23 +5,27 @@ import { useRef } from 'react';
 const skillCategories = [
   {
     title: 'Languages',
-    skills: ['Java', 'Python', 'SQL'],
+    skills: ['Java', 'Python', 'SQL', 'JavaScript', 'Bash'],
   },
   {
-    title: 'Data & Analysis',
-    skills: ['Data Cleaning', 'Data Validation', 'SQL Queries', 'Data Analysis', 'Excel'],
+    title: 'Cloud & Infrastructure',
+    skills: ['Microsoft Azure', 'Azure VMs', 'Virtual Networks', 'Linux (Ubuntu)', 'PuTTY', 'WinSCP'],
   },
   {
-    title: 'Web Technologies',
-    skills: ['HTML', 'CSS', 'JavaScript'],
+    title: 'Networking',
+    skills: ['TCP/IP', 'OSI Model', 'Cisco Packet Tracer', 'Socket Programming', 'IP Addressing', 'Routing & Switching'],
   },
   {
-    title: 'Cloud & Networking',
-    skills: ['Networking', 'Microsoft Azure', 'Virtual Machines', 'TCP/IP', 'OSI Model'],
+    title: 'Web Development',
+    skills: ['HTML', 'CSS', 'React', 'TypeScript', 'Node.js', 'Flask', 'REST APIs'],
+  },
+  {
+    title: 'Data & Analytics',
+    skills: ['Data Cleaning', 'SQL Queries', 'Excel', 'Data Visualization', 'MFCC/STFT', 'LSTM'],
   },
   {
     title: 'Tools & Platforms',
-    skills: ['Git', 'GitHub', 'PuTTY', 'WinSCP', 'VS Code', 'Jupyter Notebook', 'Linux'],
+    skills: ['Git', 'GitHub', 'VS Code', 'Jupyter Notebook', 'Postman', 'Cisco PT'],
   },
 ];
 
@@ -42,7 +46,7 @@ export const Skills = () => {
             Skills & <span className="gradient-text">Expertise</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Technologies I've worked with in real-world projects and professional environments
+            Technologies I've applied in internships, production projects, and certified training programs
           </p>
         </motion.div>
 

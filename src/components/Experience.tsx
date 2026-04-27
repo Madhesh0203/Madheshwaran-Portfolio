@@ -11,14 +11,14 @@ const experiences = [
     period: 'November 2025 – Present',
     location: 'Chennai, Tamil Nadu',
     description:
-      'Applying core concepts of SQL, Linux operating systems, networking, and Microsoft Azure cloud fundamentals. Working on virtual machine configuration and network security.',
+      'Working within a cloud and infrastructure team, applying Azure services, Linux system administration, and SQL for enterprise-level data operations.',
     achievements: [
-      'Applied core concepts of SQL, Linux operating systems, networking, and Microsoft Azure cloud fundamentals.',
-      'Worked with Azure virtual machines for basic instance creation, configuration, and monitoring.',
-      'Configured networking concepts including IP addressing, OSI layers, and secure access controls.',
-      'Used PuTTY and WinSCP to securely access and manage Linux-based cloud servers.',
-      'Prepared weekly technical transcripts covering RDBMS concepts, switching, routing, and process synchronization.',
-      'Participated in team meetings, webinars, and technical discussions to gain real-world industry exposure.',
+      'Provisioned and configured Azure Virtual Machines including networking, storage, and access controls.',
+      'Managed Linux-based cloud servers using PuTTY and WinSCP for secure remote access and file transfers.',
+      'Applied TCP/IP and OSI model knowledge to configure network segmentation and security groups.',
+      'Wrote and optimised SQL queries for RDBMS-based data extraction and reporting tasks.',
+      'Authored weekly technical documentation covering switching, routing, and process synchronisation concepts.',
+      'Participated in engineering reviews and webinars to align with industry-standard cloud practices.',
     ],
     technologies: [
       'SQL',
@@ -38,14 +38,14 @@ const experiences = [
     period: 'October – December 2023',
     location: 'Chennai, Tamil Nadu',
     description:
-      'Contributed to developing an online e-commerce platform with user-friendly and responsive design using HTML, CSS, and JavaScript.',
+      'Contributed to building and shipping a production e-commerce platform, owning frontend components and backend data integration from development through delivery.',
     achievements: [
-      'Contributed to developing an online e-commerce platform with user-friendly and responsive design.',
-      'Collaborated with the team to build clean and optimized web pages ahead of deadlines.',
-      'Reused front-end components to streamline development and maintain consistency.',
-      'Implemented catalog and cart functionality using HTML, CSS, and JavaScript.',
-      'Integrated SQL database for product inventory, order tracking, and customer data management.',
-      'Improved site performance by reducing load times and ensuring cross-browser compatibility.',
+      'Developed reusable UI components for product catalogue, cart, and checkout flows using HTML, CSS, and JavaScript.',
+      'Integrated an SQL backend for real-time product inventory, order tracking, and customer data management.',
+      'Improved page load performance by optimising assets and ensuring cross-browser compatibility.',
+      'Collaborated in a team environment, delivering features ahead of deadlines with clean, consistent code.',
+      'Applied responsive design principles to ensure consistent experience across mobile and desktop viewports.',
+      'Participated in code reviews, contributing constructive feedback and incorporating review comments efficiently.',
     ],
     technologies: [
       'HTML',
@@ -84,7 +84,7 @@ export const Experience = () => {
             Professional <span className="gradient-text">Journey</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            From data analytics to automation and ML-driven insights, here’s my experience delivering business value with scalable solutions.
+            Internship experience in cloud infrastructure and full-stack development, delivering results in production environments.
           </p>
         </motion.div>
 

@@ -25,7 +25,7 @@ interface Project {
 const projects: Project[] = [
   {
     title: 'Family Medical Record System',
-    description: 'A secure web-based family health management system that allows families to store, manage, and access medical records digitally. Features include family member profiles, medical history tracking, appointment records, and secure OTP-based authentication — making healthcare data easily accessible for families.',
+    description: 'Secure web application for digitising family health records. Features OTP-based authentication, appointment tracking, and medical history management — reducing reliance on paper records and improving data accessibility for families.',
     tags: ['Web Development', 'HTML/CSS', 'JavaScript', 'Healthcare', 'Node.js'],
     categories: ['Web Development', 'Social Impact'],
     github: 'https://github.com/Madhesh0203/Family-medical-record-system',
@@ -33,8 +33,8 @@ const projects: Project[] = [
     image: '/images/family-medical.png',
   },
   {
-    title: 'Sentiment Analysis using Machine Learning',
-    description: 'Developed a speech-based sentiment analysis system capable of accurately identifying emotions such as happy, sad, and neutral from voice input. Extracted advanced audio features using MFCC and STFT techniques, and implemented LSTM models for precise emotion classification.',
+    title: 'Speech Sentiment Classifier (ML)',
+    description: 'End-to-end ML pipeline for real-time emotion detection from audio input. Extracted MFCC and STFT features, trained an LSTM model achieving accurate happy/sad/neutral classification, and served predictions via a Flask API.',
     tags: ['Machine Learning', 'LSTM', 'MFCC/STFT', 'Python', 'Flask', 'HTML/CSS', 'Groq API'],
     categories: ['AI & ML', 'Web Development'],
     github: 'https://github.com/Madhesh0203',
@@ -42,24 +42,23 @@ const projects: Project[] = [
   },
   {
     title: 'ASD Support & Awareness Platform',
-    description: 'A dedicated resource hub for Autism Spectrum Disorder (ASD). Provides early identification tools, therapeutic activity guides, and a supportive community space for families and caregivers.',
+    description: 'Accessible web platform providing early identification tools and therapeutic activity guides for Autism Spectrum Disorder. Designed with WCAG accessibility principles, targeting caregivers and families with clear, structured content.',
     tags: ['Web Development', 'jQuery', 'Social Impact', 'Accessibility'],
     categories: ['Web Development', 'Social Impact'],
     github: 'https://github.com/Madhesh0203/ASD-child-support',
     image: '/images/asd-support.png',
   },
-
   {
-    title: 'Mini Nmap Network Scanner',
-    description: 'A custom Python-based network scanner for Linux environments. Capable of detecting open ports, identifying running services, and generating detailed scan reports using TCP socket programming.',
+    title: 'Mini Nmap — Network Scanner',
+    description: 'Custom Python network scanner for Linux environments. Uses raw TCP socket programming to detect open ports, identify running services, and generate structured scan reports — mirroring core Nmap functionality.',
     tags: ['Python', 'Networking', 'Socket Programming', 'Linux', 'Security'],
     categories: ['Software & Tools', 'Cloud & Networking'],
     github: 'https://github.com/Madhesh0203/Mini-nmap',
     image: '/images/network-tool.svg',
   },
   {
-    title: 'Modern Ecommerce Gift Shop',
-    description: 'A feature-rich e-commerce web application designed for personalized gifting. Users can browse products, customize gifts for specific occasions, and manage orders through a secure and responsive interface.',
+    title: 'E-Commerce Gift Shop',
+    description: 'Full-featured e-commerce web application with product browsing, gift customisation, and order management. Built with a responsive UI and integrated backend for inventory and cart state management.',
     tags: ['Web Development', 'E-commerce', 'UI/UX', 'Frontend'],
     categories: ['Web Development'],
     github: 'https://github.com/Madhesh0203/Ecommerce-website',
@@ -67,7 +66,7 @@ const projects: Project[] = [
   },
   {
     title: 'Slooze Inventory Analytics',
-    description: 'An advanced analytics solution for inventory management. Provides data visualization trends, stock level tracking, and actionable insights to optimize supply chain operations.',
+    description: 'Business intelligence dashboard for inventory management. Delivers data visualisation, stock-level tracking, and trend analysis to support supply chain decision-making — built with a focus on clarity and performance.',
     tags: ['Data Analysis', 'Analytics', 'Visualization', 'Business Intelligence'],
     categories: ['AI & ML', 'Software & Tools'],
     github: 'https://github.com/Madhesh0203/slooze-inventory-analytics',
@@ -75,7 +74,7 @@ const projects: Project[] = [
   },
   {
     title: 'Hand Gesture Mouse Control',
-    description: 'A touchless mouse control system that uses real-time hand gesture recognition via a webcam to move the cursor, perform clicks, and scroll — all without touching a mouse. Built using MediaPipe for hand landmark detection and PyAutoGUI for system-level mouse control.',
+    description: 'Touchless HCI system using real-time hand landmark detection via MediaPipe. Maps finger gestures to mouse events (move, click, scroll) using PyAutoGUI — demonstrating applied computer vision with no external hardware.',
     tags: ['Python', 'OpenCV', 'MediaPipe', 'PyAutoGUI', 'Computer Vision'],
     categories: ['AI & ML', 'Software & Tools'],
     github: 'https://github.com/Madhesh0203/Hand_Gesture_Mouse',
@@ -108,7 +107,7 @@ export const Projects = () => {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A selection of my recent work in data analytics, machine learning, and AI automation
+            A curated selection of projects spanning cloud infrastructure, machine learning, full-stack development, and network security
           </p>
         </motion.div>
 
