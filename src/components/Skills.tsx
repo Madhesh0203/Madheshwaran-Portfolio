@@ -9,7 +9,7 @@ const skillCategories = [
   },
   {
     title: 'Cloud & Infrastructure',
-    skills: ['Microsoft Azure', 'Azure VMs', 'Virtual Networks', 'Linux (Ubuntu)', 'PuTTY', 'WinSCP'],
+    skills: ['Microsoft Azure', 'Azure VMs', 'Virtual Networks', 'AWS Basics', 'Linux (Ubuntu)', 'PuTTY', 'WinSCP'],
   },
   {
     title: 'Networking',
