@@ -5,34 +5,34 @@ import { TrendingUp, Brain, Code2, Trophy, Zap, Users } from 'lucide-react';
 
 const highlights = [
   {
-    icon: TrendingUp,
-    title: 'Data Analysis',
-    description: 'SQL-based data pipelines, cleaning, validation, and delivering actionable insights from raw datasets.',
+    icon: Zap,
+    title: 'Cloud Infrastructure',
+    description: 'Deploy and maintain cloud-native apps on Azure using Docker, Azure VMs, ACR, and Nginx reverse proxies in production.',
   },
   {
     icon: Code2,
     title: 'Full Stack Development',
-    description: 'Built production-ready web apps using HTML, CSS, JavaScript, Node.js, and REST APIs.',
+    description: 'Built production-ready apps with React, Vite, Flask, and REST APIs — containerized and deployed to Azure.',
   },
   {
     icon: Brain,
     title: 'Machine Learning',
-    description: 'Trained and deployed LSTM-based models for real-time speech sentiment classification.',
+    description: 'Trained and deployed LSTM-based models for real-time Tamil speech sentiment classification.',
+  },
+  {
+    icon: TrendingUp,
+    title: 'DevOps & CI/CD',
+    description: 'Git, GitHub Actions, Docker Buildx, multi-platform image builds, and automated deployment workflows.',
   },
   {
     icon: Users,
     title: 'Team Collaboration',
-    description: 'Led cross-functional teams as Event Coordinator, managing timelines and deliverables end-to-end.',
-  },
-  {
-    icon: Zap,
-    title: 'Cloud & Networking',
-    description: 'Provisioned Azure VMs, configured OSI/TCP-IP networks, and managed Linux servers via PuTTY/WinSCP.',
+    description: 'Collaborates with dev teams on production releases, infrastructure debugging, and deployment validation.',
   },
   {
     icon: Trophy,
     title: 'Certified & Growing',
-    description: 'Holds credentials from Microsoft, Cisco, and IBM — actively expanding in cloud and DevOps domains.',
+    description: 'Microsoft AZ-900 (In Progress), Cisco Networking, IBM SQL, Udemy Azure — continuously expanding cloud expertise.',
   },
 ];
 
@@ -53,7 +53,7 @@ export const About = () => {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Cloud Engineer · Software Developer · Data Analyst
+            Cloud Engineer · Docker & Azure · DevOps
           </p>
         </motion.div>
 
@@ -68,10 +68,10 @@ export const About = () => {
             <h3 className="font-display text-xl font-semibold mb-4 gradient-text">Background</h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I am <span className="text-foreground font-medium">Madheshwaran J</span>, a Computer Science Engineering graduate from Sathyabama Institute of Science and Technology, Chennai. I have hands-on internship experience at <span className="text-foreground font-medium">MethodHub Software</span> (Cloud Infrastructure & Networking) and <span className="text-foreground font-medium">Lemonpeak Technologies</span> (Full Stack Web Development) — working in real production environments with industry-standard tools.
+                I am <span className="text-foreground font-medium">Madheshwaran J</span>, a Cloud Engineer at <span className="text-foreground font-medium">MethodHub Software Pvt. Ltd.</span>, Chennai. I graduated in Computer Science Engineering from Sathyabama Institute of Science and Technology and moved into a full-time cloud role, building and managing production-grade infrastructure on Microsoft Azure.
               </p>
               <p>
-                I work across cloud and software layers: provisioning <span className="text-primary font-medium">Azure VMs</span>, configuring <span className="text-primary font-medium">TCP/IP networks and OSI-stack services</span>, managing Linux servers, and building full-stack web applications and ML pipelines. I hold industry certifications from Microsoft, Cisco, and IBM, and bring a structured, collaborative approach to engineering challenges.
+                I work hands-on with <span className="text-primary font-medium">Docker, Docker Compose, Azure VMs, and Azure Container Registry (ACR)</span> to containerize and deploy applications. I configure <span className="text-primary font-medium">Nginx reverse proxies</span>, manage PostgreSQL databases, handle SSL certificates and DNS, and troubleshoot production issues across networking, authentication, and container communication — all while collaborating closely with development teams.
               </p>
             </div>
           </motion.div>

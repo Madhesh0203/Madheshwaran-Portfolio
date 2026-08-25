@@ -10,9 +10,18 @@ interface Certification {
   license: string;
   description: string[];
   logo: string;
+  badge?: string;
 }
 
-const certificationDescriptions: Record<string, { description: string[], logo: string }> = {
+const certificationDescriptions: Record<string, { description: string[], logo: string, badge?: string }> = {
+  'Microsoft Azure Fundamentals (AZ-900)': {
+    description: [
+      'Core Azure services: compute, storage, networking, and identity management',
+      'Azure pricing models, SLAs, service lifecycle, and cloud concepts'
+    ],
+    logo: `${import.meta.env.BASE_URL}logos/microsoft.png`,
+    badge: 'In Progress'
+  },
   'Azure Cloud Fundamentals': {
     description: [
       'Core Azure services: compute, storage, networking, and identity management',
@@ -52,11 +61,12 @@ const certificationDescriptions: Record<string, { description: string[], logo: s
 };
 
 const priorityOrder = [
+  'Microsoft Azure Fundamentals (AZ-900)',
+  'Azure Cloud Fundamentals',
   'Networking Basics',
   'Getting Started with Cisco Packet Tracer',
-  'Azure Cloud Fundamentals',
-  'Java Full Stack course and Soft skill training',
-  'SQL and Relational Databases 101'
+  'SQL and Relational Databases 101',
+  'Java Full Stack course and Soft skill training'
 ];
 
 const INITIAL_DISPLAY_COUNT = 3;
@@ -106,7 +116,8 @@ export const Certifications = ({ limit }: { limit?: number }) => {
               authority,
               license,
               description: certificationDescriptions[name].description,
-              logo: certificationDescriptions[name].logo
+              logo: certificationDescriptions[name].logo,
+              badge: certificationDescriptions[name].badge
             });
           }
         });
@@ -174,7 +185,14 @@ export const Certifications = ({ limit }: { limit?: number }) => {
                       }}
                     />
                   </div>
-                  <ExternalLink size={16} className="text-primary opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
+                  <div className="ml-auto flex items-center gap-2">
+                    {cert.badge && (
+                      <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400 border border-amber-500/30 animate-pulse">
+                        {cert.badge}
+                      </span>
+                    )}
+                    <ExternalLink size={16} className="text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </div>
                 </div>
 
                 <h3 className="font-display font-bold text-lg mb-2 group-hover:text-primary transition-colors line-clamp-2">

@@ -33,9 +33,9 @@ const projects: Project[] = [
     image: '/images/family-medical.png',
   },
   {
-    title: 'Speech Sentiment Classifier (ML)',
-    description: 'End-to-end ML pipeline for real-time emotion detection from audio input. Extracted MFCC and STFT features, trained an LSTM model achieving accurate happy/sad/neutral classification, and served predictions via a Flask API.',
-    tags: ['Machine Learning', 'LSTM', 'MFCC/STFT', 'Python', 'Flask', 'HTML/CSS', 'Groq API'],
+    title: 'Tamil Speech Sentiment Classifier',
+    description: 'Flask web app that translates Tamil speech to English using the Groq API and classifies sentiment with an LSTM model trained on MFCC and STFT audio features. Integrated REST APIs and PostgreSQL for real-time prediction and data storage.',
+    tags: ['Machine Learning', 'LSTM', 'MFCC/STFT', 'Python', 'Flask', 'Groq API', 'PostgreSQL'],
     categories: ['AI & ML', 'Web Development'],
     github: 'https://github.com/Madhesh0203',
     image: '/images/sentiment-analysis.svg',

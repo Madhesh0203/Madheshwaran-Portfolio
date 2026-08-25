@@ -4,28 +4,28 @@ import { useRef } from 'react';
 
 const skillCategories = [
   {
-    title: 'Languages',
-    skills: ['Java', 'Python', 'SQL', 'JavaScript', 'Bash'],
-  },
-  {
     title: 'Cloud & Infrastructure',
-    skills: ['Microsoft Azure', 'Azure VMs', 'Virtual Networks', 'AWS Basics', 'Linux (Ubuntu)', 'PuTTY', 'WinSCP'],
+    skills: ['Microsoft Azure', 'Azure VMs', 'Azure Container Registry (ACR)', 'Azure Container Apps', 'Azure DNS', 'Azure CLI', 'Azure Resource Groups'],
   },
   {
-    title: 'Networking',
-    skills: ['TCP/IP', 'OSI Model', 'Cisco Packet Tracer', 'Socket Programming', 'IP Addressing', 'Routing & Switching'],
+    title: 'Containers & DevOps',
+    skills: ['Docker', 'Docker Compose', 'Docker Buildx', 'Nginx', 'GitHub Actions', 'CI/CD', 'Git', 'GitHub'],
   },
   {
-    title: 'Web Development',
-    skills: ['HTML', 'CSS', 'React', 'TypeScript', 'Node.js', 'Flask', 'REST APIs'],
+    title: 'Languages',
+    skills: ['Python', 'Java', 'SQL', 'JavaScript', 'HTML', 'CSS', 'Bash'],
   },
   {
-    title: 'Data & Analytics',
-    skills: ['Data Cleaning', 'SQL Queries', 'Excel', 'Data Visualization', 'MFCC/STFT', 'LSTM'],
+    title: 'Web & Frameworks',
+    skills: ['React', 'Vite', 'Flask', 'REST APIs', 'TypeScript', 'Node.js'],
   },
   {
-    title: 'Tools & Platforms',
-    skills: ['Git', 'GitHub', 'VS Code', 'Jupyter Notebook', 'Postman', 'Cisco PT'],
+    title: 'Databases & Networking',
+    skills: ['PostgreSQL', 'MySQL', 'TCP/IP', 'DNS', 'HTTP/HTTPS', 'SSL/TLS', 'Reverse Proxy', 'Load Balancing'],
+  },
+  {
+    title: 'Operating Systems & Tools',
+    skills: ['Ubuntu Linux', 'Windows', 'VS Code', 'Postman', 'PuTTY', 'WinSCP', 'Cisco Packet Tracer'],
   },
 ];
 

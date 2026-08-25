@@ -59,10 +59,9 @@ export const Hero = () => {
             <TypeWriter
               words={[
                 'Cloud Engineer',
-                'Software Developer',
+                'Docker & Azure Expert',
                 'Full Stack Developer',
-                'Data Analyst',
-                'ML Engineer',
+                'DevOps Enthusiast',
                 'Problem Solver'
               ]}
               className="text-primary font-semibold"
@@ -77,7 +76,7 @@ export const Hero = () => {
           >
             Based in Chennai, Tamil Nadu.
             <br /><br />
-            Computer Science Engineering graduate with hands-on internship experience in cloud infrastructure, networking, and full-stack development. Backed by industry certifications in Microsoft Azure and Cisco networking.
+            Cloud Engineer with hands-on experience designing, deploying, and managing cloud-native applications on Microsoft Azure. Skilled in Docker, Nginx, Azure VMs, ACR, PostgreSQL, and Git-based CI/CD workflows — building scalable, production-grade infrastructure.
           </motion.p>
 
           {/* Social Links */}
