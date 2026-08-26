@@ -71,31 +71,6 @@ const experiences = [
       'GitHub',
     ],
   },
-  {
-    title: 'Web Development Intern',
-    company: 'Lemonpeak Technologies',
-    image: '/logos/lemonpeak.svg',
-    period: 'October – December 2023',
-    location: 'Chennai, Tamil Nadu',
-    description:
-      'Contributed to building and shipping a production e-commerce platform, owning frontend components and backend data integration from development through delivery.',
-    achievements: [
-      'Developed reusable UI components for product catalogue, cart, and checkout flows using HTML, CSS, and JavaScript.',
-      'Integrated an SQL backend for real-time product inventory, order tracking, and customer data management.',
-      'Improved page load performance by optimising assets and ensuring cross-browser compatibility.',
-      'Collaborated in a team environment, delivering features ahead of deadlines with clean, consistent code.',
-      'Applied responsive design principles to ensure consistent experience across mobile and desktop viewports.',
-      'Participated in code reviews, contributing constructive feedback and incorporating review comments efficiently.',
-    ],
-    technologies: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'SQL',
-      'Responsive Design',
-      'E-commerce'
-    ],
-  },
 ];
 
 export const Experience = () => {
